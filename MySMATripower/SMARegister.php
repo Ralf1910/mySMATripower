@@ -530,78 +530,6 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ],
-
-            /**
-             * Sunny Boy Storage
-             */
-            30843 => [
-                'name' => 'BatAmp',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX3',
-                'profile' => '~Ampere'
-            ],
-            30845 => [
-                'name' => 'Current battery charge status',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => '~Battery.100'
-            ],
-            30847 => [
-			    'name' => 'BatDiagActlCapacNom',
-			    'count' => 2,
-			    'type' => 'U32',
-			    'format' => 'FIX0',
-			    'profile' => '~Battery.100'
-            ],
-            30849 => [
-                'name' => 'Battery temperature',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX1',
-                'profile' => '~Temperature'
-            ],
-            30851 => [
-                'name' => 'Battery voltage',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX2',
-                'profile' => '~Volt'
-            ],
-            30955 => [
-            	'name' => 'BatOpStt',
-            	'count' => 2,
-            	'type' => 'U32',
-            	'format' => 'ENUM',
-				'mapping' => [
-				     303 => 'Aus',
-				     2291 => 'Batterie Standby',
-				     2292 => 'Batterie laden',
-				     2293 => 'Batterie entladen',
-				     16777213 => 'Informationen liegen nicht vor'
-					]
-            ],
-            31391 => [
-			    'name' => 'OperationBatHealth',
-			    'count' => 2,
-			    'type' => 'U32',
-			    'format' => 'ENUM',
-				'mapping' => [
-					    35 => 'Fehler',
-  				        303 => 'Aus',
-					    307 => 'OK',
-					    455 => 'Warnung',
-					    16777213 => 'Informationen liegen nicht vor'
-					]
-            ],
-            40187 => [
-			    'name' => 'BatCapacRtgWh',
-			    'count' => 2,
-			    'type' => 'U32',
-				'format' => 'RAW',
-				'profile' => 'MySMA.Wh'
             ]
         ]
     ];
@@ -618,6 +546,15 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ]
+        ],
+                'sunnyboy' => [
+		            30775 => [
+		                'name' => 'AC active power across all phases',
+		                'count' => 2,
+		                'type' => 'S32',
+		                'format' => 'FIX0',
+		                'profile' => 'Watt'
+		            ]
         ]
 
     ];
