@@ -7,17 +7,8 @@
       "options": [
         {
           "label": "Default",
-          "value": "default"
-        },
-        {
-          "label": "Storage",
-          "value": "storage"
-        },
-        {
-	  "label": "SMA Tripower",
-	  "value": "tripower"
-        }
-        
+          "value": "SMA Tripower"
+        }        
       ]
     },
     {
