@@ -1,0 +1,14 @@
+
+{
+  "id": "{2DF5814C-7858-4A25-9AED-676CE61172DA}",
+  "name": "SMATripower",
+  "type": 3,
+  "vendor": "SMA",
+  "aliases": [
+    "SMA Tripower"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "SMA"
+}
