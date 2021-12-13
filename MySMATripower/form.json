@@ -85,12 +85,12 @@
     {
       "type": "Button",
       "label": "Read Device",
-      "onClick": "SMA_UpdateDevice($id, true);"
+      "onClick": "SMATripower_UpdateDevice($id, true);"
     },
     {
       "type": "Button",
       "label": "Update Values",
-      "onClick": "SMA_UpdateValues($id, true);"
+      "onClick": "SMATripower_UpdateValues($id, true);"
     }
   ]
 }
