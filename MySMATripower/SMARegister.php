@@ -378,13 +378,6 @@ class SMARegister
                 'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ],
-            30837 => [
-                'name' => 'Active power target value',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
             ]
         ],
         'sunnyboy' => [
@@ -456,13 +449,6 @@ class SMARegister
                 'format' => 'FIX3',
                 'profile' => '~Ampere'
             ],
-            30771 => [
-                'name' => 'DC 1 voltage input',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX2',
-                'profile' => '~Volt'
-            ],
             30773 => [
                 'name' => 'DC 1 power input',
                 'count' => 2,
@@ -476,13 +462,6 @@ class SMARegister
 			    'type' => 'S32',
 			    'format' => 'FIX3',
 			    'profile' => '~Ampere'
-			],
-			30959 => [
-			    'name' => 'DC 2 voltage input',
-			    'count' => 2,
-			    'type' => 'S32',
-			    'format' => 'FIX2',
-			    'profile' => '~Volt'
 			],
 			30961 => [
 			    'name' => 'DC 2 power input',
