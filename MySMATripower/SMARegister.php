@@ -458,20 +458,34 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ],
+	    30771 => [
+		'name' => 'DC 1 voltage input',
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Watt'
+            ],    
             30957 => [
-			    'name' => 'DC 2 current input',
-			    'count' => 2,
-			    'type' => 'S32',
-			    'format' => 'FIX3',
-			    'profile' => '~Ampere'
-			],
-			30961 => [
+		'name' => 'DC 2 current input',
+		'count' => 2,
+		'type' => 'S32',
+		'format' => 'FIX3',
+		'profile' => '~Ampere'
+	    ],
+	    30961 => [
 			    'name' => 'DC 2 power input',
 			    'count' => 2,
 			    'type' => 'S32',
 			    'format' => 'FIX0',
 			    'profile' => 'Watt'
             ],
+	 30959 => [
+		'name' => 'DC 2 voltage input',
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Watt'
+            ],    
             30775 => [
                 'name' => 'AC active power across all phases',
                 'count' => 2,
