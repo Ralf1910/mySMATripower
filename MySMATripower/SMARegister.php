@@ -525,7 +525,52 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
+            ],
+	    30845 => [
+                   'name' => 'Bat.ChaStt',			// Aktueller Batterieladezustand
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Prozent'
+            ],  
+	    30847 => [
+		'name' => 'Bat.Diag.ActlCapacNom',			// Aktuelle Batteriekapazität 
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Prozent'
+            ],
+	    30849 => [
+		'name' => 'Bat.TmpVal',			// Aktuelle Batterietemperatur
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Prozent'
+            ],
+		    31393 => [
+		'name' => 'BatChrg.CurBatCha',			// Aktuelle Batterieladung
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Prozent'
+            ],
+				    40187 => [
+		'name' => 'Bat.CapacRtgWh',			// Nennkapazität der Batterie
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Prozent'
+            ],
+					    31397 => [
+		'name' => 'BatChrg.BatChrg',			// Nennkapazität der Batterie
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Prozent'
             ]
+		
+		
+		
         ]
     ];
 
