@@ -268,7 +268,7 @@ class SMATripower extends Module
                 }
                 
                               if ($address == 31397 ) {
-                    print $value;
+                    print "Neuer Wert: $value";
                 }
 
                 // set profile
