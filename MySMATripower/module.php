@@ -212,7 +212,7 @@ class SMATripower extends Module
                 if (count($addresses) > 2) {
                     IPS_Sleep(200);
                 }
-
+                $this->LogMessage($config['name'], KL_DEBUG);
                 // read register
                 $value = $this->modbus->readMultipleRegisters($this->unit_id, (int)$address, $config['count']);
 
