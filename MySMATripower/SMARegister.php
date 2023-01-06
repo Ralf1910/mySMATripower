@@ -572,7 +572,7 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => '~Electricity'
             ],   
-	    32203 => [
+	    41365 => [
 		'name' => 'CmpBMS GetBatChaWh',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'S32',
