@@ -548,7 +548,7 @@ class SMARegister
                 'profile' => '~Temperature'
             ],
 			    30955 => [
-		'name' => 'Bat.OpStt',			// Batterieladung der Batterie
+		'name' => 'BatOpStt',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0'
