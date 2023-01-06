@@ -216,7 +216,7 @@ class SMATripower extends Module
                 
                 // read register
                 $value = $this->modbus->readMultipleRegisters($this->unit_id, (int)$address, $config['count']);
-               
+               var_dump($value);
                 // set endianness
                 $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
 
