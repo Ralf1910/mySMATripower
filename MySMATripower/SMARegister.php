@@ -562,13 +562,23 @@ class SMARegister
                 'profile' => 'Prozent'
             ],
 					    31397 => [
-		'name' => 'BatChrg BatChrg',			// Nennkapazität der Batterie
+		'name' => 'BatChrg BatChrg',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => 'Prozent'
+                'profile' => 'Watt'
+            ],
+					   31401 => [
+		'name' => 'BatDsch.BatDsch',			// Batterieladung der Batterie
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Watt'
             ]
 		
+		
+		
+
 		
 		
         ]
