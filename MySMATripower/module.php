@@ -242,6 +242,10 @@ class SMATripower extends Module
                     $value = (float)0;
                 }
 
+                                   if ($address == 31397 ) {
+                    print "Neuer Wert1: $value";
+                }
+                
                 // continue if value is still an array
                 if (is_array($value)) {
                     continue;
