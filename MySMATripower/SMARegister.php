@@ -555,14 +555,14 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-		'profile' => 'SMATripower.Watt',
+		'profile' => 'Watt',
 	    ],
 		   31393 => [
 		'name' => 'BatChrg CurBatCha',			// Momentane Batterieladung
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => 'SMATripower.Watt',
+                'profile' => 'Watt',
 		'archive' => 1
             ],
 	    40187 => [
@@ -570,7 +570,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => '~Electricity'
+                'profile' => 'MySMA.Wh'
             ],   
 	    	
 		31397 => [
@@ -578,14 +578,14 @@ class SMARegister
                 'count' => 4,
                 'type' => 'U64',
                 'format' => 'FIX0',
-                'profile' => '~Electricity'
+                'profile' => 'MySMA.Wh'
             ],					   	
 	    31401 => [
 		'name' => 'CmpBMS GetBatDschWh',			// Batterieladung der Batterie
                 'count' => 4,
                 'type' => 'U64',
                 'format' => 'FIX0',
-                'profile' => '~Electricity'
+                'profile' => 'MySMA.Wh'
             ]
 	]
     ];
