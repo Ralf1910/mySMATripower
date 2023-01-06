@@ -412,8 +412,7 @@ class SMARegister
                     303 => 'Off',
                     307 => 'OK',
                     455 => 'Warning'
-                ]
-            ],
+                ],
             30541 => [
                 'name' => 'Operating time',
                 'count' => 2,
@@ -527,7 +526,8 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-                'profile' => '~Battery.100'
+                'profile' => '~Battery.100',
+		'archive' => 0
             ],  
 	    30847 => [
 		'name' => 'Bat Diag ActlCapacNom',			// Aktuelle Batteriekapazität 
@@ -567,7 +567,8 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => '~Electricity'
+                'profile' => '~Electricity',
+		'archive' => 1
             ],
 	    40187 => [
 		'name' => 'Bat CapacRtgWh',			// Nennkapazität der Batterie
@@ -604,7 +605,6 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => '~Electricity'
             ]
-        ]
     ];
 
     /**
