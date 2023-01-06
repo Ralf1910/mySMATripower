@@ -547,6 +547,13 @@ class SMARegister
                 'format' => 'S32',
                 'profile' => '~Temperature'
             ],
+			    32201 => [
+		'name' => 'CmpBMS GetBatChaWh',			// Batterieladung der Batterie
+                'count' => 2,
+                'type' => 'U64',
+                'format' => 'FIX0',
+                'profile' => '~Electricity'
+            ],	
 	    31393 => [
 		'name' => 'BatChrg CurBatCha',			// Aktuelle Batterieladung
                 'count' => 2,
