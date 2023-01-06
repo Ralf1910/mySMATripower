@@ -419,7 +419,8 @@ class SMARegister
                 'type' => 'U32',
                 'format' => 'DURATION_S',
                 'profile' => 'Hours'
-            ],
+            ]
+],
             30543 => [
                 'name' => 'Feed-in time',
                 'count' => 2,
@@ -605,6 +606,7 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => '~Electricity'
             ]
+	]
     ];
 
     /**
@@ -618,7 +620,14 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ]
+            ],					   	
+	    32205 => [
+		'name' => 'CmpBMS GetBatDschWh',			// Batterieladung der Batterie
+                'count' => 2,
+                'type' => 'U64',
+                'format' => 'FIX0',
+                'profile' => '~Electricity'
+	    ]
         ],
                 'sunnyboy' => [
 		            30775 => [
