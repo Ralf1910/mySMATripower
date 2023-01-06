@@ -216,6 +216,8 @@ class SMATripower extends Module
                 
                 // read register
                 $value = $this->modbus->readMultipleRegisters($this->unit_id, (int)$address, $config['count']);
+                $origAddress = $address;
+                $origValue   = $value;
                 if ($address == 31397 ) {
                     print "Adresse: $address Wert $value[0] $value[1] $value[2] $value[3] $value[4] $value[5] $value[6] $value[7] ";
                 }
@@ -228,9 +230,7 @@ class SMATripower extends Module
                 $value = $endianness
                     ? array_chunk($value, 4)[0]
                     : array_chunk($value, 2)[1];
-               if ($address == 31397 ) {
-                    print_r ($value);
-                }
+
                 // convert signed value
                 if (substr($config['type'], 0, 1) == 'S') {
                     // convert to signed int
@@ -291,6 +291,10 @@ class SMATripower extends Module
 
                 // append data
                 $this->data[$config['name']] = $value;
+                
+                if ($origAddress == 31397) {
+                    $this->data[$config['name']] = $value[7] + ($value[6] +($value[5] + ($value[4] + ($value[3] + $value[2]*256)*256)*256)*256)*256;
+                }
             } catch (Exception $e) {
                
             }
