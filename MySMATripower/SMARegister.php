@@ -562,6 +562,12 @@ class SMARegister
                 'type' => 'U64',
                 'format' => 'FIX0'
 	    ],			  
+		32201 => [
+		'name' => 'CmpBMSGetBatChaWh',			// Batterieladung der Batterie
+                'count' => 4,
+                'type' => 'U64',
+                'format' => 'FIX0'
+	    ],
 		31395 => [
 		'name' => 'BatDschCurBatDsch',			// Batterieladung der Batterie
                 'count' => 2,
