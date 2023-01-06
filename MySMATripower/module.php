@@ -248,7 +248,7 @@ class SMATripower extends Module
                 }
                 
                        if ($address == 31397 ) {
-                    print_r $value
+                    print_r $value;
                 }
 
                 // map value
@@ -270,7 +270,7 @@ class SMATripower extends Module
                 }
                 
                               if ($address == 31397 ) {
-                    print $value
+                    print $value;
                 }
 
                 // set profile
