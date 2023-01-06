@@ -68,6 +68,7 @@
       "BatOpStt": "Betriebsstatus der Batterie",
       "BatCapacRtgWh": "Batterie Nennkapazität",
       "OperationBatHealth": "Batterie-Zustand",
+      "BatChrg CurBatCha" : "Momentane Batterieladung",
       "BatChrg BatChrg": "Batterieladung",
       "CmpBMS GetBatChaWh": "Aktuelle Ladeenergie",
       "CmpBMS GetBatDschWh": "Aktuelle Entladeenergie",
