@@ -520,7 +520,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-		'profile' => 'Float.Prozent'
+		'profile' => 'Float.Prozent',
                 'archive' => 0
             ],  
 	    30847 => [
