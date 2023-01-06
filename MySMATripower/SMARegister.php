@@ -505,7 +505,7 @@ class SMARegister
             /**
              * Sunny Tripower
              */
-            32205 => [
+            30777 => [
                 'name' => 'Power L1',
                 'count' => 2,
                 'type' => 'S32',
