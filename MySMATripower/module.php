@@ -216,9 +216,8 @@ class SMATripower extends Module
                 
                 // read register
                 $value = $this->modbus->readMultipleRegisters($this->unit_id, (int)$address, $config['count']);
-               print "Adresse: $address Wert $value[0] $value[1] $value[2] $value[3] - ";
-                if ($config['count']>2) {
-                    print "Wert $value[4] $value[5] $value[6] $value[7]";
+                if ($address == 31397 ) {
+                    print "Adresse: $address Wert $value[0] $value[1] $value[2] $value[3] $value[4] $value[5] $value[6] $value[7] ";
                 }
                 // set endianness
                 $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
@@ -247,6 +246,10 @@ class SMATripower extends Module
                 if (is_array($value)) {
                     continue;
                 }
+                
+                       if ($address == 31397 ) {
+                    print_r $value
+                }
 
                 // map value
                 if (isset($config['mapping'][$value])) {
@@ -264,6 +267,10 @@ class SMATripower extends Module
                     $value /= 3600;
                 } elseif ($config['format'] == 'DURATION_H') {
                     $value /= 60;
+                }
+                
+                              if ($address == 31397 ) {
+                    print $value
                 }
 
                 // set profile
