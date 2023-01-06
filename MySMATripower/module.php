@@ -223,9 +223,7 @@ class SMATripower extends Module
                 }
                 // set endianness
                 $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
-               if ($address == 31397 ) {
-                    print "Adresse2: $address Wert $value[0] $value[1] $value[2] $value[3] $value[4] $value[5] $value[6] $value[7]  - $endianness - ";
-                }
+
                 // fix bytes
                 $value = $endianness
                     ? array_chunk($value, 4)[0]
@@ -246,9 +244,7 @@ class SMATripower extends Module
                     $value = (float)0;
                 }
 
-                                   if ($address == 31397 ) {
-                    print "Neuer Wert1: $value";
-                }
+
                 
                 // continue if value is still an array
                 if (is_array($value)) {
@@ -275,10 +271,7 @@ class SMATripower extends Module
                     $value /= 60;
                 }
                 
-                              if ($address == 31397 ) {
-                    print "Neuer Wert: $value";
-                }
-
+ 
                 // set profile
                 if (isset($config['profile']) && !isset($this->profile_mappings[$config['name']])) {
                     $this->profile_mappings[$config['name']] = $config['profile'];
@@ -292,7 +285,7 @@ class SMATripower extends Module
                 // append data
                 $this->data[$config['name']] = $value;
                 
-                if ($origAddress == 31397) {
+                if ($origAddress == 31397 || $origAddress == 31401 ) {
                     $this->data[$config['name']] = $origValue[7] + ($origValue[6] +($origValue[5] + ($origValue[4] + ($origValue[3] + $origValue[2]*256)*256)*256)*256)*256;
                 }
             } catch (Exception $e) {
