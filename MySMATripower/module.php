@@ -217,6 +217,9 @@ class SMATripower extends Module
                 // read register
                 $value = $this->modbus->readMultipleRegisters($this->unit_id, (int)$address, $config['count']);
                print "Adresse: $address Wert $value[0] $value[1] $value[2] $value[3] - ";
+                if ($config['count']>2) {
+                    print "Wert $value[4] $value[5] $value[6] $value[7]";
+                }
                 // set endianness
                 $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
 
