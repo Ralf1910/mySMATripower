@@ -212,11 +212,11 @@ class SMATripower extends Module
                 if (count($addresses) > 2) {
                     IPS_Sleep(200);
                 }
-                $this->LogMessage($config['name'], KL_ERROR);
-                $this->LogMessage((int)$address, KL_ERROR);
+                // $this->LogMessage($config['name'], KL_ERROR);
+                // $this->LogMessage((int)$address, KL_ERROR);
                 // read register
                 $value = $this->modbus->readMultipleRegisters($this->unit_id, (int)$address, $config['count']);
-                $this->LogMessage($value, KL_ERROR);
+                // $this->LogMessage($value, KL_ERROR);
                 // set endianness
                 $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
 
@@ -276,7 +276,7 @@ class SMATripower extends Module
                 // append data
                 $this->data[$config['name']] = $value;
             } catch (Exception $e) {
-                $this->LogMessage($e, KL_ERROR);
+                // $this->LogMessage($e, KL_ERROR);
             }
         }
 
