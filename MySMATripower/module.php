@@ -144,7 +144,7 @@ class SMATripower extends Module
      * read & update update registers
      * @param bool $applied
      */
-    public function UpdateValues($applied = false)
+    public function UpdateValues(bool $applied = false)
     {
         if ($this->_isDay() || $applied || $this->applied) {
             $this->update = 'values';
