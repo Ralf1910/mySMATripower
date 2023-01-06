@@ -531,21 +531,21 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => ''
+                'profile' => '~Battery.100'
             ],  
 	    30847 => [
 		'name' => 'Bat Diag ActlCapacNom',			// Aktuelle Batteriekapazität 
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => ''
+                'profile' => '~Battery.100'
             ],
 	    30849 => [
 		'name' => 'Bat TmpVal',			// Aktuelle Batterietemperatur
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'S32',
-                'profile' => ''
+                'profile' => '~Temperature'
             ],
 	    31393 => [
 		'name' => 'BatChrg CurBatCha',			// Aktuelle Batterieladung
