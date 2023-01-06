@@ -275,6 +275,7 @@ class SMATripower extends Module
                 // append data
                 $this->data[$config['name']] = $value;
             } catch (Exception $e) {
+                $this->LogMessage($e, KL_ERROR);
             }
         }
 
