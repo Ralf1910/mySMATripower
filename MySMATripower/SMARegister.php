@@ -501,10 +501,6 @@ class SMARegister
                 'format' => 'FIX3',
                 'profile' => '~Ampere'
             ],
-
-            /**
-             * Sunny Tripower
-             */
             30777 => [
                 'name' => 'Power L1',
                 'count' => 2,
@@ -544,16 +540,16 @@ class SMARegister
 		'name' => 'Bat TmpVal',			// Aktuelle Batterietemperatur
                 'count' => 2,
                 'type' => 'S32',
-                'format' => 'S32',
+                'format' => 'TEMP',
                 'profile' => '~Temperature'
             ],
-			    30955 => [
+	    30955 => [
 		'name' => 'BatOpStt',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0'
             ],			   	
-30851 => [
+	    30851 => [
 		'name' => 'BatVol',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'U32',
@@ -561,7 +557,7 @@ class SMARegister
 	    ],		  
 		31401 => [
 		'name' => 'BatDschBatDsch',			// Batterieladung der Batterie
-                'count' => 2,
+                'count' => 4,
                 'type' => 'U64',
                 'format' => 'FIX0'
 	    ],		
