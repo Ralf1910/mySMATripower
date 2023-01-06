@@ -73,6 +73,8 @@
       "CmpBMS GetBatDschWh": "Aktuelle Entladeenergie",
       "Bat Diag ActlCapacNom": "Aktuelle Batteriekapazität",
       "Bat TmpVal": "Batterietemperatur", 
+      "CmpBMS GetBatChaWh" : "Gesamte Ladung der Batterie",
+      "CmpBMS GetBatDschWh" : "Gesamte Entladung der Batterie",
       "Firmware": "Firmware",
       "Grid energy consumption today": "Netzbezug heute",
       "Grid energy feed-in today": "Netzeinspeisung heute",
