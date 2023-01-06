@@ -494,13 +494,6 @@ class SMARegister
                 'profile' => 'Watt',
                 'archive' => 0 // archive: default
             ],
-            30795 => [
-                'name' => 'Grid current',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX3',
-                'profile' => '~Ampere'
-            ],
             30777 => [
                 'name' => 'Power L1',
                 'count' => 2,
@@ -527,25 +520,25 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-                'profile' => '~Battery.100',
-		'archive' => 0
+		'profile' => 'Float.Prozent'
+                'archive' => 0
             ],  
 	    30847 => [
 		'name' => 'Bat Diag ActlCapacNom',			// Aktuelle Batteriekapazität 
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-                'profile' => '~Battery.100'
+                'profile' => 'Float.Prozent'
             ],
 	    30849 => [
 		'name' => 'Bat TmpVal',			// Aktuelle Batterietemperatur
                 'count' => 2,
                 'type' => 'S32',
-                'format' => 'TEMP',
+                'format' => 'FIX1',
                 'profile' => '~Temperature'
             ],
 	    30955 => [
-		'name' => 'BatOpStt',			// Batterieladung der Batterie
+		'name' => 'Bat OpStt',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0'
@@ -554,32 +547,22 @@ class SMARegister
 		'name' => 'BatVol',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'FIX2'
+                'format' => 'FIX2',
+		'profile' => 'Elektrizitaet.Spannung_DC'
 	    ],		  
-		31401 => [
-		'name' => 'BatDschBatDsch',			// Batterieladung der Batterie
-                'count' => 4,
-                'type' => 'U64',
-                'format' => 'FIX0'
-	    ],			  
-		32201 => [
-		'name' => 'CmpBMSGetBatChaWh',			// Batterieladung der Batterie
-                'count' => 4,
-                'type' => 'U64',
-                'format' => 'FIX0'
-	    ],
 		31395 => [
-		'name' => 'BatDschCurBatDsch',			// Batterieladung der Batterie
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX0'
-	    ],
-		   31393 => [
-		'name' => 'BatChrg CurBatCha',			// Aktuelle Batterieladung
+		'name' => 'BatDschCurBatDsch',			// Momentane Batterieentladung
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => '~Electricity',
+		'profile' => 'SMATripower.Watt',
+	    ],
+		   31393 => [
+		'name' => 'BatChrg CurBatCha',			// Momentane Batterieladung
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'SMATripower.Watt',
 		'archive' => 1
             ],
 	    40187 => [
@@ -588,31 +571,17 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => '~Electricity'
-            ],
-	    31397 => [
-		'name' => 'BatChrg BatChrg',			// Batterieladung der Batterie
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
-            ],
-	    31401 => [
-		'name' => 'BatDsch BatDsch',			// Batterieladung der Batterie
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
-            ],    
+            ],   
 	    32201 => [
 		'name' => 'CmpBMS GetBatChaWh',			// Batterieladung der Batterie
-                'count' => 2,
+                'count' => 4,
                 'type' => 'U64',
                 'format' => 'FIX0',
                 'profile' => '~Electricity'
             ],					   	
 	    32205 => [
 		'name' => 'CmpBMS GetBatDschWh',			// Batterieladung der Batterie
-                'count' => 2,
+                'count' => 4,
                 'type' => 'U64',
                 'format' => 'FIX0',
                 'profile' => '~Electricity'
@@ -631,14 +600,7 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ],					   	
-	    32205 => [
-		'name' => 'CmpBMS GetBatDschWh',			// Batterieladung der Batterie
-                'count' => 2,
-                'type' => 'U64',
-                'format' => 'FIX0',
-                'profile' => '~Electricity'
-	    ]
+            ]
         ],
                 'sunnyboy' => [
 		            30775 => [
