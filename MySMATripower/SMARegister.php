@@ -569,7 +569,7 @@ class SMARegister
                 'profile' => 'Watt'
             ],
 					   31401 => [
-		'name' => 'BatDsch.BatDsch',			// Batterieladung der Batterie
+		'name' => 'BatDsch BatDsch',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
