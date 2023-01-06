@@ -229,7 +229,7 @@ class SMATripower extends Module
                     ? array_chunk($value, 4)[0]
                     : array_chunk($value, 2)[1];
                if ($address == 31397 ) {
-                    print_r $value;
+                    print_r ($value);
                 }
                 // convert signed value
                 if (substr($config['type'], 0, 1) == 'S') {
