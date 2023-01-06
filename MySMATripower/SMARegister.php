@@ -575,8 +575,8 @@ class SMARegister
 	    	
 		31397 => [
 		'name' => 'CmpBMS GetBatChaWh',			// Batterieladung der Batterie
-                'count' => 2,
-                'type' => 'U32',
+                'count' => 4,
+                'type' => 'U64',
                 'format' => 'FIX0',
                 'profile' => '~Electricity'
             ],					   	
