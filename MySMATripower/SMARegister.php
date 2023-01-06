@@ -561,9 +561,14 @@ class SMARegister
                 'count' => 4,
                 'type' => 'U64',
                 'format' => 'FIX0'
-	    ],		
-		
-	    31393 => [
+	    ],			  
+		31395 => [
+		'name' => 'BatDschCurBatDsch',			// Batterieladung der Batterie
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0'
+	    ],
+		   31393 => [
 		'name' => 'BatChrg CurBatCha',			// Aktuelle Batterieladung
                 'count' => 2,
                 'type' => 'S32',
