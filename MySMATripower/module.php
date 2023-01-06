@@ -49,7 +49,7 @@ class SMATripower extends Module
         $this->RegisterPropertyString('ip', '');
         $this->RegisterPropertyInteger('port', 502);
         $this->RegisterPropertyInteger('unit_id', 3);
-        $this->RegisterPropertyInteger('interval', 300);
+        $this->RegisterPropertyInteger('interval', 60);
         $this->RegisterPropertyInteger('daytime', 1);
         $this->RegisterPropertyInteger('interval_current', 30);
 
