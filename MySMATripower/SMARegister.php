@@ -462,7 +462,7 @@ class SMARegister
 		'name' => 'DC 1 voltage input',
                 'count' => 2,
                 'type' => 'S32',
-                'format' => 'FIX0',
+                'format' => 'FIX2',
                 'profile' => 'Watt'
             ],    
             30957 => [
@@ -473,17 +473,17 @@ class SMARegister
 		'profile' => '~Ampere'
 	    ],
 	    30961 => [
-			    'name' => 'DC 2 power input',
-			    'count' => 2,
-			    'type' => 'S32',
-			    'format' => 'FIX0',
-			    'profile' => 'Watt'
+		'name' => 'DC 2 power input',
+		'count' => 2,
+		'type' => 'S32',
+		'format' => 'FIX0',
+		'profile' => 'Watt'
             ],
-	 30959 => [
+	    30959 => [
 		'name' => 'DC 2 voltage input',
                 'count' => 2,
                 'type' => 'S32',
-                'format' => 'FIX0',
+                'format' => 'FIX2',
                 'profile' => 'Watt'
             ],    
             30775 => [
@@ -527,75 +527,68 @@ class SMARegister
                 'profile' => 'Watt'
             ],
 	    30845 => [
-                   'name' => 'Bat ChaStt',			// Aktueller Batterieladezustand
+                'name' => 'Bat ChaStt',					// Aktueller Batterieladezustand
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => 'Prozent'
+                'profile' => ''
             ],  
 	    30847 => [
 		'name' => 'Bat Diag ActlCapacNom',			// Aktuelle Batteriekapazität 
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => 'Prozent'
+                'profile' => ''
             ],
 	    30849 => [
 		'name' => 'Bat TmpVal',			// Aktuelle Batterietemperatur
                 'count' => 2,
                 'type' => 'S32',
-                'format' => 'FIX0',
-                'profile' => 'Prozent'
+                'format' => 'S32',
+                'profile' => ''
             ],
-		    31393 => [
+	    31393 => [
 		'name' => 'BatChrg CurBatCha',			// Aktuelle Batterieladung
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'MySMA.Wh'
             ],
-				    40187 => [
+	    40187 => [
 		'name' => 'Bat CapacRtgWh',			// Nennkapazität der Batterie
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'MySMA.Wh'
             ],
-					    31397 => [
+	    31397 => [
 		'name' => 'BatChrg BatChrg',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ],
-					   31401 => [
+	    31401 => [
 		'name' => 'BatDsch BatDsch',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ],    
-					   32201 => [
+	    32201 => [
 		'name' => 'CmpBMS GetBatChaWh',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'MySMA.Wh'
             ],					   	
-32205 => [
+	    32205 => [
 		'name' => 'CmpBMS GetBatDschWh',			// Batterieladung der Batterie
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'MySMA.Wh'
             ]
-		
-		
-		
-		
-
-		
-		
         ]
     ];
 
