@@ -123,7 +123,7 @@ class SMATripower extends Module
      * read & update device registersSMA_UpdateDevice
      * @param bool $applied
      */
-    public function UpdateDevice($applied = false)
+    public function UpdateDevice(bool $applied = false)
     {
         $this->update = 'device';
         $this->ReadData(SMARegister::device_addresses);
