@@ -293,7 +293,7 @@ class SMATripower extends Module
                 $this->data[$config['name']] = $value;
                 
                 if ($origAddress == 31397) {
-                    $this->data[$config['name']] = $value[7] + ($value[6] +($value[5] + ($value[4] + ($value[3] + $value[2]*256)*256)*256)*256)*256;
+                    $this->data[$config['name']] = $origValue[7] + ($origValue[6] +($origValue[5] + ($origValue[4] + ($origValue[3] + $origValue[2]*256)*256)*256)*256)*256;
                 }
             } catch (Exception $e) {
                
