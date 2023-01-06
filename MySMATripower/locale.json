@@ -71,7 +71,7 @@
       "BatChrg CurBatCha" : "Momentane Batterieladung",
       "BatDschCurBatDsch" : "Momentane Batterieentladung",
       "BatVol" : "Batteriespannung",
-      "Bat CapacTrgWh" : "Batteriekapazität",
+      "Bat CapacRtgWh" : "Batteriekapazität",
       "BatChrg BatChrg": "Batterieladung",
       "CmpBMS GetBatChaWh": "Aktuelle Ladeenergie",
       "CmpBMS GetBatDschWh": "Aktuelle Entladeenergie",
