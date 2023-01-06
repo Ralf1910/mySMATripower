@@ -529,14 +529,14 @@ class SMARegister
 	    30845 => [
                 'name' => 'Bat ChaStt',					// Aktueller Batterieladezustand
                 'count' => 2,
-                'type' => 'S32',
+                'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => '~Battery.100'
             ],  
 	    30847 => [
 		'name' => 'Bat Diag ActlCapacNom',			// Aktuelle Batteriekapazität 
                 'count' => 2,
-                'type' => 'S32',
+                'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => '~Battery.100'
             ],
@@ -552,26 +552,26 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => 'MySMA.Wh'
+                'profile' => '~Electricity'
             ],
 	    40187 => [
 		'name' => 'Bat CapacRtgWh',			// Nennkapazität der Batterie
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => 'MySMA.Wh'
+                'profile' => '~Electricity'
             ],
 	    31397 => [
 		'name' => 'BatChrg BatChrg',			// Batterieladung der Batterie
                 'count' => 2,
-                'type' => 'S32',
+                'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ],
 	    31401 => [
 		'name' => 'BatDsch BatDsch',			// Batterieladung der Batterie
                 'count' => 2,
-                'type' => 'S32',
+                'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ],    
