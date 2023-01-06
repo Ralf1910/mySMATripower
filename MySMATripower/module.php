@@ -222,14 +222,14 @@ class SMATripower extends Module
                 // set endianness
                 $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
                if ($address == 31397 ) {
-                    print "Adresse2: $address Wert $value[0] $value[1] $value[2] $value[3] $value[4] $value[5] $value[6] $value[7] ";
+                    print "Adresse2: $address Wert $value[0] $value[1] $value[2] $value[3] $value[4] $value[5] $value[6] $value[7]  - $endianness - ";
                 }
                 // fix bytes
                 $value = $endianness
                     ? array_chunk($value, 4)[0]
                     : array_chunk($value, 2)[1];
                if ($address == 31397 ) {
-                    print "Adresse3: $address Wert $value[0] $value[1] $value[2] $value[3] $value[4] $value[5] $value[6] $value[7] ";
+                    print_r $value;
                 }
                 // convert signed value
                 if (substr($config['type'], 0, 1) == 'S') {
