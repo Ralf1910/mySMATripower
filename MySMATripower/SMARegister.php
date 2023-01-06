@@ -553,6 +553,12 @@ class SMARegister
                 'type' => 'U32',
                 'format' => 'FIX0'
             ],	
+			   30955 => [
+		'name' => 'BatVol',			// Batterieladung der Batterie
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX2'
+	    ],		  
 	    31393 => [
 		'name' => 'BatChrg CurBatCha',			// Aktuelle Batterieladung
                 'count' => 2,
