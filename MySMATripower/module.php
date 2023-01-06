@@ -247,9 +247,7 @@ class SMATripower extends Module
                     continue;
                 }
                 
-                       if ($address == 31397 ) {
-                    print_r $value;
-                }
+
 
                 // map value
                 if (isset($config['mapping'][$value])) {
