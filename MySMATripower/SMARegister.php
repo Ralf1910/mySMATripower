@@ -248,14 +248,14 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'RAW',
-                'profile' => 'Energy.Wh'
+                'profile' => 'Integer.Wh'
             ],
             30529 => [
                 'name' => 'Total yield',
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'RAW',
-                'profile' => 'Energy.Wh'
+                'profile' => 'Integer.Wh'
             ],
             30769 => [
                 'name' => 'DC 1 current input',
