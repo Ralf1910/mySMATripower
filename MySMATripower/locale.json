@@ -76,6 +76,7 @@
       "Bat ChaStt" : "Aktueller Batterieladezustand",
       "CmpBMS GetBatChaWh": "Aktuelle Ladeenergie",
       "Bat OpStt" : "Betriebsstatus der Batterie",
+      "Coolsys Cab Tmp Val" : "Temperatur des Wechselrichters",
       "Operation Health" : "Zustand",
       "CmpBMS GetBatDschWh": "Aktuelle Entladeenergie",
       "Bat Diag ActlCapacNom": "Aktuelle Batteriekapazität",
