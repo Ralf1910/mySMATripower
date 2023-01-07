@@ -435,7 +435,7 @@ class SMARegister
                     3664 => 'Notladebetrieb',
                     2292 => 'Batterie laden',
                     2293 => 'Batterie entladen',
-		    16777213 => 'Informationen liegen nicht vor'
+		    16777213 => 'Informationen liegen nicht vor']
                 ],		   	
 	    30851 => [
 		'name' => 'BatVol',			// Spannung der Batterie
