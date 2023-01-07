@@ -232,7 +232,10 @@ class SMATripower extends Module
                     if ($value>=128*256*256*256) {
                         $value = $value - 256*256*256*256;
                     }
-                } else {
+                }  else if ($config['type'] == "U64") {
+                    $value = $value[7] + $value[6]*256 +$value[5]*256*256 + $value[4]*256*256*256 +  $value[3]*256*256*256*256 + $value[2]*256*256*256*256*256 + $value[1]*256*256*256*256*256*256 + $value[0]*256*256*256*256*256*256*256;
+                }
+                    else {
                     $value=0;
                 }
                 // fix bytes
@@ -296,7 +299,7 @@ class SMATripower extends Module
                 // append data
                 $this->data[$config['name']] = $value;
                 
-                if ($origAddress == 31397 || $origAddress == 31401 ) {
+                if ($origAddress == 31397) {
                     $this->data[$config['name']] = $origValue[7] + ($origValue[6] +($origValue[5] + ($origValue[4] + ($origValue[3] + $origValue[2]*256)*256)*256)*256)*256;
                 }
             } catch (Exception $e) {
