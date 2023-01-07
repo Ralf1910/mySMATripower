@@ -138,23 +138,6 @@ class SMARegister
                     9186 => 'WB 2000TLST-21',
                     9187 => 'WB 2500TLST-21',
                     9188 => 'WB 3000TLST-21',
-                    9189 => 'WTP 5000TL-20',
-                    9190 => 'WTP 6000TL-20',
-                    9191 => 'WTP 7000TL-20',
-                    9192 => 'WTP 8000TL-20',
-                    9193 => 'WTP 9000TL-20',
-                    9194 => 'STP 12000TL-US-10',
-                    9195 => 'STP 15000TL-US-10',
-                    9196 => 'STP 20000TL-US-10',
-                    9197 => 'STP 24000TL-US-10',
-                    9198 => 'SB 3000TLUS-22',
-                    9199 => 'SB 3800TLUS-22',
-                    9200 => 'SB 4000TLUS-22',
-                    9201 => 'SB 5000TLUS-22',
-                    9202 => 'WB 3000TLUS-22',
-                    9203 => 'WB 3800TLUS-22',
-                    9204 => 'WB 4000TLUS-22',
-                    9205 => 'WB 5000TLUS-22',
                     9206 => 'SC 500CP-JP',
                     9207 => 'SC 850CP',
                     9208 => 'SC 900CP',
@@ -258,22 +241,8 @@ class SMARegister
                     303 => 'Off',
                     307 => 'OK',
                     455 => 'Warning'
-                ],
-            30541 => [
-                'name' => 'Operating time',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'DURATION_S',
-                'profile' => 'Hours'
-            ]
-],
-            30543 => [
-                'name' => 'Feed-in time',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'DURATION_S',
-                'profile' => 'Hours'
-            ],
+                ]
+	    ],
             30535 => [
                 'name' => 'Day yield',
                 'count' => 2,
