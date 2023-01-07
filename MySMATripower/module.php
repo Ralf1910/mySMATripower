@@ -227,6 +227,8 @@ class SMATripower extends Module
                 }
                 else if ($config['format'] == "S32") {
                     $value = $value[3] + $value[2]*256 +$value[1]*256*256 + $value[0]*256*256*256;
+                } else {
+                    $value=0;
                 }
                 // fix bytes
                 // $value = $endianness
