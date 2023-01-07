@@ -429,8 +429,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => 'Watt',
-		'archive' => 1
+                'profile' => 'Watt'
             ],
 	    31395 => [
 		'name' => 'BatDschCurBatDsch',		// Momentane Batterieentladung
