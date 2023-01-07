@@ -45,11 +45,6 @@
       "caption": "Seconds"
     },
     {
-      "type": "CheckBox",
-      "name": "daytime",
-      "caption": "Update values on daytime only"
-    },
-    {
       "type": "Label",
       "label": "___ [ Logging ] ________________________________________________________________________________________"
     },
