@@ -248,7 +248,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'RAW',
-                'profile' => 'MySMA.Wh',
+                'profile' => 'Energy.Wh',
                 'archive' => 1 // archive: counter
             ],
             30529 => [
@@ -256,7 +256,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'RAW',
-                'profile' => 'MySMA.Wh',
+                'profile' => 'Energy.Wh',
                 'archive' => 1 // archive: counter
             ],
             30769 => [
@@ -394,15 +394,15 @@ class SMARegister
                 'profile' => 'Energy.Wh'
             ],   
 	    31397 => [
-		'name' => 'CmpBMS GetBatChaWh',			// Batterieladung der Batterie
+		'name' => 'BatChrg BatChrg',			// Batterieladung der Batterie
                 'count' => 4,
                 'type' => 'U64',
                 'format' => 'FIX0',
                 'profile' => 'Energy.Wh'
             ],					   	
 	    31401 => [
-		'name' => 'CmpBMS GetBatDschWh',			// Batterieladung der Batterie
-                'count' => 4,
+		'name' => 'BatDsch.BatDsch',			// Batterieladung der Batterie
+  		'count' => 4,
                 'type' => 'U64',
                 'format' => 'FIX0',
                 'profile' => 'Energy.Wh'
