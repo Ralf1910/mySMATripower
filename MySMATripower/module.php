@@ -373,6 +373,12 @@ class SMATripower extends Module
                 IPS_SetVariableProfileText($profile_id, '', ' Wh'); // WattHours
                 IPS_SetVariableProfileIcon($profile_id, 'Electricity');
                 break;
+            case 'Integer.Wh':
+                IPS_CreateVariableProfile($profile_id, 1); // Integer
+                IPS_SetVariableProfileDigits($profile_id, 0); // 0 decimals
+                IPS_SetVariableProfileText($profile_id, '', ' Wh'); // WattHours
+                IPS_SetVariableProfileIcon($profile_id, 'Electricity');
+                break;
            case 'Volt':
                 IPS_CreateVariableProfile($profile_id, 2); // float
                 IPS_SetVariableProfileDigits($profile_id, 1); // 0 decimals
