@@ -222,6 +222,8 @@ class SMATripower extends Module
                 // set endianness
                 // $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
 
+                print "Adresse: $address Value0: $value[0] Value1: $value[1] Value2: $value[2] Value3: $value[4] Format: $config['format']";
+                
                 if ($config['format'] == "U32") {
                     $value = $value[3] + $value[2]*256 +$value[1]*256*256 + $value[0]*256*256*256;
                 }
