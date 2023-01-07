@@ -401,7 +401,7 @@ class SMARegister
                 'profile' => 'Energy.Wh'
             ],					   	
 	    31401 => [
-		'name' => 'BatDsch.BatDsch',			// Batterieladung der Batterie
+		'name' => 'BatDsch BatDsch',			// Batterieladung der Batterie
   		'count' => 4,
                 'type' => 'U64',
                 'format' => 'FIX0',
