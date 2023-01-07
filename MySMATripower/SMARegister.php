@@ -520,7 +520,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-		'profile' => 'Float.Prozent',
+		'profile' => 'Prozent',
                 'archive' => 0
             ],  
 	    30847 => [
@@ -528,7 +528,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-                'profile' => 'Float.Prozent'
+                'profile' => 'Prozent'
             ],
 	    30849 => [
 		'name' => 'Bat TmpVal',			// Aktuelle Batterietemperatur
@@ -538,26 +538,32 @@ class SMARegister
                 'profile' => '~Temperature'
             ],
 	    30955 => [
-		'name' => 'Bat OpStt',			// Batterieladung der Batterie
-                'count' => 2,
+		'name' => 'Bat OpStt',			// Batterie Status
+		'count' => 2,
                 'type' => 'U32',
-                'format' => 'FIX0'
-            ],			   	
+                'format' => 'ENUM',
+                'mapping' => [
+                    2291 => 'Batterie Standby',
+                    3664 => 'Notladebetrieb',
+                    2292 => 'Batterie laden',
+                    2293 => 'Batterie entladen',
+		    16777213 => 'Informationen liegen nicht vor'
+                ],		   	
 	    30851 => [
-		'name' => 'BatVol',			// Batterieladung der Batterie
+		'name' => 'BatVol',			// Spannung der Batterie
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX2',
-		'profile' => 'Elektrizitaet.Spannung_DC'
+		'profile' => 'Voll'
 	    ],		  
-		31395 => [
-		'name' => 'BatDschCurBatDsch',			// Momentane Batterieentladung
+	    31395 => [
+		'name' => 'BatDschCurBatDsch',		// Momentane Batterieentladung
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
 		'profile' => 'Watt',
 	    ],
-		   31393 => [
+	    31393 => [
 		'name' => 'BatChrg CurBatCha',			// Momentane Batterieladung
                 'count' => 2,
                 'type' => 'S32',
@@ -601,7 +607,24 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ]
+            ],	    
+	    31393 => [
+		'name' => 'BatChrg CurBatCha',			// Momentane Batterieladung
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Watt',
+		'archive' => 1
+            ],
+	    31395 => [
+		'name' => 'BatDschCurBatDsch',		// Momentane Batterieentladung
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+		'profile' => 'Watt',
+	    ]
+		
+		
         ],
                 'sunnyboy' => [
 		            30775 => [
