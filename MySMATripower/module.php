@@ -50,7 +50,6 @@ class SMATripower extends Module
         $this->RegisterPropertyInteger('port', 502);
         $this->RegisterPropertyInteger('unit_id', 3);
         $this->RegisterPropertyInteger('interval', 60);
-        $this->RegisterPropertyInteger('daytime', 1);
         $this->RegisterPropertyInteger('interval_current', 10);
 
         // register timers
@@ -322,9 +321,6 @@ class SMATripower extends Module
         return true;
 
         // return true on configuration
-        if (!$this->ReadPropertyInteger('daytime')) {
-            return true;
-        }
 
         if (is_null($this->isDay)) {
             // default value
