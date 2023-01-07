@@ -229,7 +229,7 @@ class SMATripower extends Module
                 }
                 else if ($config['type'] == "S32") {
                     $value = $value[3] + $value[2]*256 +$value[1]*256*256 + $value[0]*256*256*256;
-                    if ($value[0]>=128) {
+                    if ($value>=128*255*255*255) {
                         $value = $value - 255*255*255*255;
                     }
                 } else {
