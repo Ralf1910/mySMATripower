@@ -216,14 +216,11 @@ class SMATripower extends Module
                 
                 // read register
                 $value = $this->modbus->readMultipleRegisters($this->unit_id, (int)$address, $config['count']);
-                $origAddress = $address;
-                $origValue   = $value;
 
                 // set endianness
                 // $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
 
-                print "Adresse: $address Value0: $value[0] Value1: $value[1] Value2: $value[2] Value3: $value[3] - ";
-                
+                   
                 if ($config['type'] == "U32") {
                     $value = $value[3] + ($value[2] + ($value[1] + $value[0]*256)*256)*256;
                 }
@@ -306,9 +303,6 @@ class SMATripower extends Module
                 // append data
                 $this->data[$config['name']] = $value;
                 
-                if ($origAddress == 31397) {
-                    $this->data[$config['name']] = $origValue[7] + ($origValue[6] +($origValue[5] + ($origValue[4] + ($origValue[3] + $origValue[2]*256)*256)*256)*256)*256;
-                }
             } catch (Exception $e) {
                
             }
