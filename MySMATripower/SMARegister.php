@@ -309,7 +309,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX2',
-                'profile' => 'Watt'
+                'profile' => 'Volt'
             ],    
             30957 => [
 		'name' => 'DC 2 current input',
@@ -330,7 +330,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX2',
-                'profile' => 'Watt'
+                'profile' => 'Volt'
             ],    
             30775 => [
                 'name' => 'AC active power across all phases',
@@ -358,48 +358,6 @@ class SMARegister
                 'name' => 'Power L3',
                 'count' => 2,
                 'type' => 'S32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
-            ],
-	    31259 => [
-                'name' => 'Grid FeedIn L1',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
-            ],
-	    31261 => [
-                'name' => 'Grid FeedIn L2',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
-            ],
-	    31263 => [
-                'name' => 'Grid FeedIn L3',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
-            ],
-	    31265 => [
-                'name' => 'Grid Use L1',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
-            ],
-	    31267 => [
-                'name' => 'Grid Use L2',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
-            ],
-	    31269 => [
-                'name' => 'Grid Use L3',
-                'count' => 2,
-                'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ],
@@ -442,7 +400,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX2',
-		'profile' => 'Voll'
+		'profile' => 'Volt'
 	    ],		  
 	    31395 => [
 		'name' => 'BatDschCurBatDsch',		// Momentane Batterieentladung
@@ -466,8 +424,7 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => 'Energy.Wh'
             ],   
-	    	
-		31397 => [
+	    31397 => [
 		'name' => 'CmpBMS GetBatChaWh',			// Batterieladung der Batterie
                 'count' => 4,
                 'type' => 'U64',
