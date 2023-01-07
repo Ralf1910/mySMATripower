@@ -224,10 +224,10 @@ class SMATripower extends Module
 
                 print "Adresse: $address Value0: $value[0] Value1: $value[1] Value2: $value[2] Value3: $value[3] - ";
                 
-                if ($config['format'] == "U32") {
+                if ($config['type'] == "U32") {
                     $value = $value[3] + $value[2]*256 +$value[1]*256*256 + $value[0]*256*256*256;
                 }
-                else if ($config['format'] == "S32") {
+                else if ($config['type'] == "S32") {
                     $value = $value[3] + $value[2]*256 +$value[1]*256*256 + $value[0]*256*256*256;
                 } else {
                     $value=0;
