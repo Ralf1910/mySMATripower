@@ -225,17 +225,24 @@ class SMATripower extends Module
                 print "Adresse: $address Value0: $value[0] Value1: $value[1] Value2: $value[2] Value3: $value[3] - ";
                 
                 if ($config['type'] == "U32") {
-                    $value = $value[3] + $value[2]*256 +$value[1]*256*256 + $value[0]*256*256*256;
+                    $value = $value[3] + ($value[2] + ($value[1] + $value[0]*256)*256)*256;
                 }
                 else if ($config['type'] == "S32") {
-                    $value = $value[3] + $value[2]*256 +$value[1]*256*256 + $value[0]*256*256*256;
+                    $value = $value[3] + ($value[2] + ($value[1] + $value[0]*256)*256)*256;
                     if ($value>=128*256*256*256) {
                         $value = $value - 256*256*256*256;
                     }
-                }  else if ($config['type'] == "U64") {
-                    $value = $value[7] + $value[6]*256 +$value[5]*256*256 + $value[4]*256*256*256 +  $value[3]*256*256*256*256 + $value[2]*256*256*256*256*256 + $value[1]*256*256*256*256*256*256 + $value[0]*256*256*256*256*256*256*256;
+                }  
+                else if ($config['type'] == "U64") {
+                    $value = $value[7] + ($value[6] + ($value[5] + ($value[4] + ($value[3] + ($value[2] + ($value[1] + $value[0]*256)*256)*256)*256)*256)*256)*256;
                 }
-                    else {
+                else if ($config['type'] == "S64") {
+                    $value = $value[7] + ($value[6] + ($value[5] + ($value[4] + ($value[3] + ($value[2] + ($value[1] + $value[0]*256)*256)*256)*256)*256)*256)*256;
+                    if ($value>=128*256*256*256*256*256*256*256) {
+                        $value = $value - 256*256*256*256*256*256*256*256;
+                    }
+                }
+                else {
                     $value=0;
                 }
                 // fix bytes
