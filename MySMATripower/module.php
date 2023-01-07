@@ -51,7 +51,7 @@ class SMATripower extends Module
         $this->RegisterPropertyInteger('unit_id', 3);
         $this->RegisterPropertyInteger('interval', 60);
         $this->RegisterPropertyInteger('daytime', 1);
-        $this->RegisterPropertyInteger('interval_current', 30);
+        $this->RegisterPropertyInteger('interval_current', 10);
 
         // register timers
         $this->RegisterTimer('UpdateData', 0, $this->_getPrefix() . '_UpdateValues($_IPS[\'TARGET\'], false);');
@@ -356,10 +356,22 @@ class SMATripower extends Module
                 IPS_SetVariableProfileText($profile_id, '', ' W'); // Watt
                 IPS_SetVariableProfileIcon($profile_id, 'Electricity');
                 break;
-            case 'MySMA.Wh':
-                IPS_CreateVariableProfile($profile_id, 1); // Integer
+            case 'Energy.Wh':
+                IPS_CreateVariableProfile($profile_id, 2); // float
                 IPS_SetVariableProfileDigits($profile_id, 0); // 0 decimals
-                IPS_SetVariableProfileText($profile_id, '', ' Wh'); // Watt
+                IPS_SetVariableProfileText($profile_id, '', ' Wh'); // WattHours
+                IPS_SetVariableProfileIcon($profile_id, 'Electricity');
+                break;
+           case 'Volt':
+                IPS_CreateVariableProfile($profile_id, 2); // float
+                IPS_SetVariableProfileDigits($profile_id, 1); // 0 decimals
+                IPS_SetVariableProfileText($profile_id, '', ' V'); // Volt
+                IPS_SetVariableProfileIcon($profile_id, 'Electricity');
+                break;
+           case 'Prozent':
+                IPS_CreateVariableProfile($profile_id, 2); // float
+                IPS_SetVariableProfileDigits($profile_id, 0); // 0 decimals
+                IPS_SetVariableProfileText($profile_id, '', ' %'); // Prozent
                 IPS_SetVariableProfileIcon($profile_id, 'Electricity');
                 break;
             case 'Hours':
