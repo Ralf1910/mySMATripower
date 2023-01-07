@@ -248,16 +248,14 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'RAW',
-                'profile' => 'Energy.Wh',
-                'archive' => 1 // archive: counter
+                'profile' => 'Energy.Wh'
             ],
             30529 => [
                 'name' => 'Total yield',
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'RAW',
-                'profile' => 'Energy.Wh',
-                'archive' => 1 // archive: counter
+                'profile' => 'Energy.Wh'
             ],
             30769 => [
                 'name' => 'DC 1 current input',
@@ -306,8 +304,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => 'Watt',
-                'archive' => 0 // archive: default
+                'profile' => 'Watt'
             ],
             30777 => [
                 'name' => 'Power L1',
@@ -335,8 +332,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-		'profile' => 'Prozent',
-                'archive' => 0
+		'profile' => 'Prozent'
             ],  
 	    30847 => [
 		'name' => 'Bat Diag ActlCapacNom',			// Aktuelle Batteriekapazität 
@@ -383,8 +379,7 @@ class SMARegister
                 'count' => 2,
                 'type' => 'S32',
                 'format' => 'FIX0',
-                'profile' => 'Watt',
-		'archive' => 1
+                'profile' => 'Watt'
             ],
 	    40187 => [
 		'name' => 'Bat CapacRtgWh',			// Nennkapazität der Batterie
