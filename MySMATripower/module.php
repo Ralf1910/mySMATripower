@@ -218,38 +218,42 @@ class SMATripower extends Module
                 $value = $this->modbus->readMultipleRegisters($this->unit_id, (int)$address, $config['count']);
                 $origAddress = $address;
                 $origValue   = $value;
-                if ($address == 31397 ) {
-                    print "Adresse: $address Wert $value[0] $value[1] $value[2] $value[3] $value[4] $value[5] $value[6] $value[7] ";
-                }
-                // set endianness
-                $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
 
+                // set endianness
+                // $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
+
+                if ($config['format'] == "U32") {
+                    $value = $value[3] + $value[2]*256 +$value[1]*256*256 + $value[0]*256*256*256;
+                }
+                else if ($config['format'] == "S32") {
+                    $value = $value[3] + $value[2]*256 +$value[1]*256*256 + $value[0]*256*256*256;
+                }
                 // fix bytes
-                $value = $endianness
-                    ? array_chunk($value, 4)[0]
-                    : array_chunk($value, 2)[1];
+                // $value = $endianness
+                //    ? array_chunk($value, 4)[0]
+                //    : array_chunk($value, 2)[1];
 
                 // convert signed value
-                if (substr($config['type'], 0, 1) == 'S') {
+                //if (substr($config['type'], 0, 1) == 'S') {
                     // convert to signed int
-                    $value = PhpType::bytes2signedInt($value, $endianness);
-                } // convert unsigned value
-                else if (substr($config['type'], 0, 1) == 'U') {
+                //    $value = PhpType::bytes2signedInt($value, $endianness);
+                //} // convert unsigned value
+                //else if (substr($config['type'], 0, 1) == 'U') {
                     // convert to unsigned int
-                    $value = PhpType::bytes2unsignedInt($value, $endianness);
-                }
+                //    $value = PhpType::bytes2unsignedInt($value, $endianness);
+                //}
 
                 // set value to 0 if value is negative or invalid
-                if ((is_int($value) || is_float($value)) && $value < 0 || $value == 65535) {
-                    $value = (float)0;
-                }
+                //if ((is_int($value) || is_float($value)) && $value < 0 || $value == 65535) {
+                //    $value = (float)0;
+                //}
 
 
                 
                 // continue if value is still an array
-                if (is_array($value)) {
-                    continue;
-                }
+                //if (is_array($value)) {
+                //    continue;
+                //}
                 
 
 
