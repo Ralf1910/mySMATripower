@@ -408,6 +408,13 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX1',
                 'profile' => '~Temperature'
+            ],
+	    40723 => [
+                'name' => 'BatUsDm BckDmMin',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX0',
+                'profile' => 'Prozent'
             ]
 	]
     ];
