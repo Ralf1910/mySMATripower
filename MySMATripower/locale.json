@@ -70,6 +70,7 @@
       "OperationBatHealth": "Batterie-Zustand",
       "BatChrg CurBatCha" : "Momentane Batterieladung",
       "BatDschCurBatDsch" : "Momentane Batterieentladung",
+      "BatUsDm BckDmMin" : "Minimale Breite des Ersatzstrombereichs", 
       "BatVol" : "Batteriespannung",
       "Bat CapacRtgWh" : "Batteriekapazität",
       "BatChrg BatChrg": "Batterieladung",
