@@ -261,15 +261,15 @@ class SMARegister
                 'name' => 'Day yield 3',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Integer.Wh'
+                'format' => 'FIX0'
+  
             ],
             30529 => [
                 'name' => 'Total yield',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'RAW',
-                'profile' => 'Integer.Wh'
+                'format' => 'RAW'
+     
             ],
             30769 => [
                 'name' => 'DC 1 current input',
