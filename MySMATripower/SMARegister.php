@@ -328,7 +328,8 @@ class SMARegister
                 'profile' => 'Watt'
             ],
 		            	
-31435 => [
+	
+30977 => [
                 'name' => 'Metering GridMs A phsA',
                 'count' => 2,
                 'type' => 'S32',
