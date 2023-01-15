@@ -299,22 +299,6 @@ class SMARegister
                 'format' => 'FIX2',
                 'profile' => 'Volt'
             ],    
-	            31793 => [
-		'name' => 'DC 2 current input b',
-		'count' => 2,
-		'type' => 'S32',
-		'format' => 'FIX3',
-		'profile' => '~Ampere'
-	    ],	
-			            31795 => [
-		'name' => 'DC 2 current input c',
-		'count' => 2,
-		'type' => 'S32',
-		'format' => 'FIX3',
-		'profile' => '~Ampere'
-	    ],	
-			
-
             30775 => [
                 'name' => 'AC active power across all phases',
                 'count' => 2,
