@@ -327,15 +327,6 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ],
-		            	
-	
-30977 => [
-                'name' => 'Metering GridMs A phsA',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX3',
-                'profile' => '~Ampere'
-            ],
 	    30845 => [
                 'name' => 'Bat ChaStt',					// Aktueller Batterieladezustand
                 'count' => 2,
