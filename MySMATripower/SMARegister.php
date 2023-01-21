@@ -416,7 +416,6 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => 'Prozent'
             ],
-	     	
 	    30881 => [
                 'name' => 'Operation PvGriConn',
                 'count' => 2,
@@ -427,6 +426,7 @@ class SMARegister
                     1780 => 'Öffentliches Stromnetz',
                     1781 => 'Inselnetz',
                     16777213 => 'Information liegt nicht vor'
+		   ]
                 ],					
 	     33003 => [
                 'name' => 'Operation RunStt',
@@ -439,6 +439,7 @@ class SMARegister
                     1469 => 'Herunterfahren',
 		    2119 => 'Abregelung',
                     16777213 => 'Information liegt nicht vor'
+	           ]
                 ]
 	    ]
 	]
