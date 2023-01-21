@@ -417,7 +417,7 @@ class SMARegister
                 'profile' => 'Prozent'
             ],
 	     	
-		30881 => [
+	    30881 => [
                 'name' => 'Operation PvGriConn',
                 'count' => 2,
                 'type' => 'U32',
@@ -425,7 +425,19 @@ class SMARegister
                 'mapping' => [
                     1779 => 'Getrennt',
                     1780 => 'Öffentliches Stromnetz',
-                    1781=> 'Inselnetz',
+                    1781 => 'Inselnetz',
+                    16777213 => 'Information liegt nicht vor'
+                ],					
+	     33003 => [
+                'name' => 'Operation RunStt',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'ENUM',
+                'mapping' => [
+                    235 => 'Netzparallelbetrieb',
+                    1463 => 'Backup',
+                    1469 => 'Herunterfahren',
+		    2119 => 'Abregelung',
                     16777213 => 'Information liegt nicht vor'
                 ]
 	    ]
