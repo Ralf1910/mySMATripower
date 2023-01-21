@@ -415,7 +415,20 @@ class SMARegister
                 'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => 'Prozent'
-            ]
+            ],
+	     	
+		30881 => [
+                'name' => 'Operation PvGriConn',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'ENUM',
+                'mapping' => [
+                    1779 => 'Getrennt',
+                    1780 => 'Öffentliches Stromnetz',
+                    1781=> 'Inselnetz',
+                    16777213 => 'Information liegt nicht vor'
+                ]
+	    ]
 	]
     ];
 
