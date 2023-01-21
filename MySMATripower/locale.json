@@ -84,6 +84,8 @@
       "Bat TmpVal": "Batterietemperatur", 
       "BatChrg BatChrg" : "Gesamte Ladung der Batterie",
       "BatDsch BatDsch" : "Gesamte Entladung der Batterie",
+      "Operation PvGriConn" : "Netzanbindung der Anlage",
+      "Operation RunStt" : "Betriebsstatus",
       "Firmware": "Firmware",
       "Grid energy consumption today": "Netzbezug heute",
       "Grid energy feed-in today": "Netzeinspeisung heute",
