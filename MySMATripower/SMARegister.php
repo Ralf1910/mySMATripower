@@ -425,8 +425,7 @@ class SMARegister
                     1779 => 'Getrennt',
                     1780 => 'Öffentliches Stromnetz',
                     1781 => 'Inselnetz',
-                    16777213 => 'Information liegt nicht vor'
-		   ]
+                    16777213 => 'Information liegt nicht vor' ]		   ]
                 ],					
 	     33003 => [
                 'name' => 'Operation RunStt',
@@ -438,11 +437,9 @@ class SMARegister
                     1463 => 'Backup',
                     1469 => 'Herunterfahren',
 		    2119 => 'Abregelung',
-                    16777213 => 'Information liegt nicht vor'
-	           ]
+                    16777213 => 'Information liegt nicht vor']	           ]
                 ]
 	    ]
-	]
     ];
 
     /**
