@@ -439,7 +439,6 @@ class SMARegister
 		    2119 => 'Abregelung',
                     16777213 => 'Information liegt nicht vor']	           ]
                 ]
-	    ]
     ];
 
     /**
