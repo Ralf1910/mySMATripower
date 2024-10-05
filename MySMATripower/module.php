@@ -380,7 +380,7 @@ class SMATripower extends Module
                 IPS_SetVariableProfileIcon($profile_id, 'Electricity');
                 break;
              case 'Ohm':
-                IPS_CreateVariableProfile($profile_id, 1); // Integer
+                IPS_CreateVariableProfile($profile_id, 2); // Float
                 IPS_SetVariableProfileDigits($profile_id, 0); // 0 decimals
                 IPS_SetVariableProfileText($profile_id, '', ' Ohm'); // WattHours
                 IPS_SetVariableProfileIcon($profile_id, 'Electricity');
