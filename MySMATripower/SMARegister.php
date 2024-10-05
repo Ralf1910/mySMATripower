@@ -417,7 +417,7 @@ class SMARegister
                 'profile' => 'Prozent'
             ],
 	    30225 => [
-                'name' => 'Isolation.LeakRis',
+                'name' => 'Isolation LeakRis',
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
