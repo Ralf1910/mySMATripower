@@ -44,7 +44,7 @@
       "Grid voltage phase CA": "Netzspannung Phase-CA",
       "Grid current": "Netzstrom AC",
       "Power frequency": "Netzfrequenz",
-      "Isolation.LeakRis": "Isolationswiderstand",
+      "Isolation LeakRis": "Isolationswiderstand",
       "Active power target value": "Wirkleistungssollwert",
       "Heat sink temperature": "Kühlkörpertemperatur",
       "Interior temperature": "Innenraumtemperatur",
