@@ -416,6 +416,13 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => 'Prozent'
             ],
+	    30225 => [
+                'name' => 'Isolation.LeakRis',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX0',
+                'profile' => 'Ohm'
+            ],
 	    30881 => [
                 'name' => 'Operation PvGriConn',
                 'count' => 2,
