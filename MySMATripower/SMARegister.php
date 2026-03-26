@@ -460,7 +460,21 @@ class SMARegister
                 'type' => 'S32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ],	    
+            ],
+	  	30773 => [
+                'name' => 'DC 1 power input',
+                'count' => 2,
+                'type' => 'S32',
+                'format' => 'FIX0',
+                'profile' => 'Watt'
+            ],
+	 	30961 => [
+		'name' => 'DC 2 power input',
+		'count' => 2,
+		'type' => 'S32',
+		'format' => 'FIX0',
+		'profile' => 'Watt'
+            ],
 	    31393 => [
 		'name' => 'BatChrg CurBatCha',			// Momentane Batterieladung
                 'count' => 2,
